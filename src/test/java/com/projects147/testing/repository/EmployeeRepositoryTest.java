@@ -1,5 +1,6 @@
 package com.projects147.testing.repository;
 
+import com.projects147.testing.integration.AbstractionBaseTest;
 import com.projects147.testing.model.Employee;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-class EmployeeRepositoryTest {
+class EmployeeRepositoryTest extends AbstractionBaseTest {
 
     @Autowired
     private EmployeeRepository employeeRepository;
