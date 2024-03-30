@@ -23,14 +23,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
-public class EmployeeControllerIT {
+public class EmployeeControllerIT extends AbstractionBaseTest {
+
 
     @Autowired
     private MockMvc mockMvc;
-
     @Autowired
     private EmployeeRepository employeeRepository;
-
     @Autowired
     private ObjectMapper objectMapper;
 
